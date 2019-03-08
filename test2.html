@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html>  
+<head>
+    <title></title>
+    <script type="text/javascript">
+    <!--求和函数-->
+    function sum(a,b){
+        return a+b;
+    }
+
+    <!--回退按钮-->
+    function back(){
+        var result = window.action.back();
+        document.getElementById("p").innerHTML = result;
+    }
+
+    <!--本地弹Dialog-->
+    function showDialog(){
+        window.action.showDialog(123456, 'content');
+    }
+
+    <!--修改颜色-->
+    function changeColor(color){
+        document.body.style.backgroundColor = color;
+    }
+    </script>
+</head>
+
+<body>
+<h1>Test Scheme</h1> 
+<!--手动点击跳转-->
+<a href="luban://www.souche.com/autotrack/launcher?sessionId=1023320">luban://www.souche.com/autotrack/launcher?sessionId=1023320</a>
+
+<a href="action://bbbbb">action://bbbbb</a>
+<a href="action://riskControl">action://riskControl</a>
+<a href="action://riskControl/operation1">action://riskControl/operation1</a>
+<a href="action://riskControl/operation2?">action://riskControl/operation2?</a>
+<a href="action://riskControl/operation3?param1=111&param2=222&param3=333">action://riskControl/operation3?param1=111&param2=222&param3=333</a>
+
+
+</body>  
+</html>
